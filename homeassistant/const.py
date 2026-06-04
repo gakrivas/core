@@ -27,10 +27,10 @@ __short_version__: Final = f"{MAJOR_VERSION}.{MINOR_VERSION}"
 __version__: Final = f"{__short_version__}.{PATCH_VERSION}"
 REQUIRED_PYTHON_VER: Final[tuple[int, int, int]] = (3, 14, 2)
 
-# Format for platform files
+# Format for platform files.
 PLATFORM_FORMAT: Final = "{platform}.{domain}"
 
-# Explicit reexport to allow other modules to import Platform directly from const
+# Explicit reexport to allow other modules to import Platform directly from const.
 Platform = EntityPlatforms
 
 BASE_PLATFORMS: Final = {platform.value for platform in Platform}
@@ -48,7 +48,7 @@ ENTITY_MATCH_ANY: Final = "any"
 DEVICE_DEFAULT_NAME: Final = "Unnamed Device"
 
 # Max characters for data stored in the recorder (changes to these limits would require
-# a database migration)
+# a database migration).
 MAX_LENGTH_EVENT_EVENT_TYPE: Final = 64
 MAX_LENGTH_EVENT_ORIGIN: Final = 32
 MAX_LENGTH_EVENT_CONTEXT_ID: Final = 36
@@ -318,7 +318,7 @@ ATTR_ATTRIBUTION: Final = "attribution"
 # Credentials
 ATTR_CREDENTIALS: Final = "credentials"
 
-# Contains time-related attributes
+# Contains time-related attributes.
 ATTR_NOW: Final = "now"
 ATTR_DATE: Final = "date"
 ATTR_TIME: Final = "time"
@@ -335,39 +335,39 @@ ATTR_ID: Final = "id"
 # Name
 ATTR_NAME: Final = "name"
 
-# Contains one string or a list of strings, each being an entity id
+# Contains one string or a list of strings, each being an entity id.
 ATTR_ENTITY_ID: Final = "entity_id"
 
-# Contains a list of entity ids that are members of a group
+# Contains a list of entity ids that are members of a group.
 ATTR_GROUP_ENTITIES: Final = "group_entities"
 
-# Contains one string, the config entry ID
+# Contains one string, the config entry ID.
 ATTR_CONFIG_ENTRY_ID: Final = "config_entry_id"
 
-# Contains one string or a list of strings, each being an area id
+# Contains one string or a list of strings, each being an area id.
 ATTR_AREA_ID: Final = "area_id"
 
-# Contains one string, the device ID
+# Contains one string, the device ID.
 ATTR_DEVICE_ID: Final = "device_id"
 
-# Contains one string or a list of strings, each being an floor id
+# Contains one string or a list of strings, each being an floor id.
 ATTR_FLOOR_ID: Final = "floor_id"
 
-# Contains one string or a list of strings, each being an label id
+# Contains one string or a list of strings, each being an label id.
 ATTR_LABEL_ID: Final = "label_id"
 
-# String with a friendly name for the entity
+# String with a friendly name for the entity.
 ATTR_FRIENDLY_NAME: Final = "friendly_name"
 
-# A picture to represent entity
+# A picture to represent entity.
 ATTR_ENTITY_PICTURE: Final = "entity_picture"
 
 ATTR_IDENTIFIERS: Final = "identifiers"
 
-# Icon to use in the frontend
+# Icon to use in the frontend.
 ATTR_ICON: Final = "icon"
 
-# The unit of measurement if applicable
+# The unit of measurement if applicable.
 ATTR_UNIT_OF_MEASUREMENT: Final = "unit_of_measurement"
 
 CONF_UNIT_SYSTEM_METRIC: Final = "metric"
